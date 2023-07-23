@@ -7,14 +7,19 @@ const Hero = ({ heading, message }) => {
     backgroundImage: 'url(/main.png)',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
-    backgroundPosition: 'center',  // Das Bild wird immer zentriert dargestellt
+    backgroundPosition: 'center',  
+    width: '100%',
+    height: '100%',
+    position: 'absolute',
+    zIndex: '1',
   };
 
   return (
-    <div style={backgroundStyle} className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center'>
+    <div className='relative overflow-hidden h-screen'>
+      <div style={backgroundStyle}></div>
       {/* Overlay */}
       <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' />
-      <div className='p-5 text-white z-[2] mt-[-10rem]'>
+      <div className='p-5 text-white z-[2] mt-[-10rem] relative'>
         <h2 className='text-5xl font-bold'>{heading}</h2>
         <p className='py-5 text-xl'>{message}</p>
         <div className='flex justify-center'>
