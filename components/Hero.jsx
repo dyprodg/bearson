@@ -7,6 +7,7 @@ const Hero = ({ heading, message }) => {
     backgroundImage: 'url(/main.png)',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+    backgroundPosition: 'center',  // Das Bild wird immer zentriert dargestellt
   };
 
   return (
