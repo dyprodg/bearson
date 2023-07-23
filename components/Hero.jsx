@@ -2,8 +2,15 @@ import React from 'react';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Hero = ({ heading, message }) => {
+  // Definiere den Stil für das Hintergrundbild
+  const backgroundStyle = {
+    backgroundImage: 'url(/main.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+  };
+
   return (
-    <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img'>
+    <div style={backgroundStyle} className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center'>
       {/* Overlay */}
       <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' />
       <div className='p-5 text-white z-[2] mt-[-10rem]'>
