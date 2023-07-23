@@ -1,44 +1,4 @@
-import React, { useState } from 'react';
-
-const Impressum = () => {
-  const [showAGB, setShowAGB] = useState(false);
-
-  return (
-    <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover'>
-      <footer id='impressum' className='bg-black text-white py-4'>
-        <div className='container mx-auto px-4 sm:px-0'>
-          <div className='flex flex-col sm:flex-row justify-center'>
-            <p className='text-center sm:text-left'>&copy; {new Date().getFullYear()} Bearson Tattoo. All rights reserved.</p>
-          </div>
-          <div className='flex flex-col sm:flex-row mt-4 space-y-4 sm:space-y-0 sm:space-x-4'>
-            <div className='bg-black p-4 rounded-lg'>
-              <h4 className='text-lg font-bold mb-2 text-white'>Impressum</h4>
-              <p>Bearson Tattoo</p>
-              <p>Herrenstraße 2</p>
-              <p>86911 Dießen am Ammersee</p>
-            </div>
-            <div className='bg-black p-4 rounded-lg'>
-              <h4 className='text-lg font-bold mb-2 text-white'>Kontakt</h4>
-              <p>Telefon: 01234 / 56789</p>
-              <p>E-Mail: kontakt@kontakt.de</p>
-            </div>
-            <div className='bg-black p-4 rounded-lg'>
-              <h4 className='text-lg font-bold mb-2 text-white'>Weitere Infos</h4>
-              <p>Diese Webseite verwendet ausschließlich technisch notwendige Cookies.</p>
-              <p>Steuernummer: 12345</p>
-              <p>Handelsregister: ABC123</p>
-              <div className='flex flex-col'>
-                <button
-                  className='text-blue-500 font-semibold mt-2'
-                  onClick={() => setShowAGB(!showAGB)}
-                >
-                  {showAGB ? 'AGB ausblenden' : 'AGB anzeigen'}
-                </button>
-                {showAGB && (
-                  <div className='bg-black p-4 rounded-lg mt-4 overflow-auto h-64'>
-                    <h4 className='text-lg font-bold my-2 text-white'>Allgemeine Geschäftsbedingungen</h4>
-                    {/* Füge hier den Inhalt deiner AGB ein */}
-                    <p>AGBs
+<p>AGBs
 
 Gültigkeit
 Allen in Auftrag genommenen oder ausgeführten Aufträgen und Geschäftsbeziehungen der Tätowiererin/des Tätowierers liegen diese Geschäftsbedingungen zugrunde. <br />
@@ -74,15 +34,3 @@ Sollte die Auftraggeberin/der Auftraggeber wider besseren Wissens Falschangaben 
 ​<br />
 Die Unwirksamkeit einzelner Punkte dieser Allgemeinen Geschäftsbedingungen berührt die Wirksamkeit der übrigen Bestimmungen nicht. An die Stelle der unwirksamen Bestimmung tritt eine neue Bestimmung, die in ihrer wirtschaftlichen, rechtlichen und sinngemäßen Auswirkung der unwirksamen Bestimmung im Sinne der Tätowiererin/ des Tätowierers möglichst nahe kommt.</p>
                   
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-};
-
-export default Impressum;
