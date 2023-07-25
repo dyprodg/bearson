@@ -10,7 +10,7 @@ const Impressum = () => {
           <div className='flex flex-col sm:flex-row justify-center'>
             <p className='text-center sm:text-left'>&copy; {new Date().getFullYear()} Bearson Tattoo. All rights reserved.</p>
           </div>
-          <div className='flex flex-col sm:flex-row mt-4 space-y-4 sm:space-y-0 sm:space-x-4'>
+          <div className='flex flex-col sm:flex-row mt-4 space-y-4 sm:space-y-0 sm:space-x-4 text-xs'>
             <div className='bg-black p-4 rounded-lg'>
               <h4 className='text-lg font-bold mb-2 text-white'>Impressum</h4>
               <p>Bearson Tattoo</p>
@@ -19,14 +19,22 @@ const Impressum = () => {
             </div>
             <div className='bg-black p-4 rounded-lg'>
               <h4 className='text-lg font-bold mb-2 text-white'>Kontakt</h4>
-              <p>Telefon: 01234 / 56789</p>
-              <p>E-Mail: kontakt@kontakt.de</p>
+              <p>Telefon: +49 178 9751672</p>
+              <p>E-Mail: bearson@web.de</p>
             </div>
             <div className='bg-black p-4 rounded-lg'>
-              <h4 className='text-lg font-bold mb-2 text-white'>Weitere Infos</h4>
-              <p>Diese Webseite verwendet ausschließlich technisch notwendige Cookies.</p>
+              <h4 className='font-bold mb-2 text-white text-lg'>Weitere Infos</h4>
+              <p>Datenschutzerklärung
+              Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+              Datenerfassung auf unserer Website
+              Wir, die Betreiber dieser Website, erheben und speichern auf unserer Website ausdrücklich keine personenbezogenen Daten (wie Name, Anschrift oder E-Mail-Adressen), es sei denn, diese werden freiwillig von Ihnen zur Verfügung gestellt (z. B. in einem Kontaktformular, sofern vorhanden).
+              Verwendung von Cookies
+              Wir verwenden auf unserer Website keine Cookies. Cookies sind kleine Dateien, die Ihr Browser automatisch erstellt und die auf Ihrem Endgerät (Laptop, Tablet, Smartphone o.ä.) gespeichert werden, wenn Sie unsere Seite besuchen.
+              Änderungen dieser Datenschutzerklärung
+              Wir behalten uns vor, diese Datenschutzerklärung zu ändern, um sie an aktuelle rechtliche Anforderungen oder Änderungen unserer Dienste anzupassen, z. B. bei der Einführung neuer Dienste. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+              <br />
               <p>Steuernummer: 12345</p>
-              <p>Handelsregister: ABC123</p>
+              
               <div className='flex flex-col'>
                 <button
                   className='text-blue-500 font-semibold mt-2'
