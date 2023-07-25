@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { SliderData } from './SliderData';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Slider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -19,7 +20,11 @@ const Slider = ({ slides }) => {
   }
 
   return (
-    <div id='gallery' className='max-w-[1240px] mx-auto'>
+    <motion.div 
+    initial={{ y: +100, opacity: 0 }}
+    animate={{ y:0 , opacity: 1 }}
+    transition={{ duration: 2 }}
+    id='gallery' className='max-w-[1240px] mx-auto'>
       <h1 className='text-2xl font-bold text-center p-4'>Galerie</h1>
       <div className='relative flex justify-center p-4'>
 
@@ -56,7 +61,7 @@ const Slider = ({ slides }) => {
         );
     })}
     </div>
-    </div>
+    </motion.div>
   );
 };
 

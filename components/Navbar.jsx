@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { motion } from "framer-motion";
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -25,16 +27,23 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
+    <motion.div
+    initial={{ y: -100, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 2 }}
+      
       style={{ backgroundColor: `${color}` }}
       className='fixed left-0 top-0 w-full z-30 ease-in duration-300'
     >
       <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
-        <Link href='/'>
+      <Link href='/'>
+        <a className='flex items-center'>
+          <img src="/bearson.ico" alt="Bearson Icon" className='mr-2' />
           <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
-            Bearson Tattoo
+          Bearson Tattoo
           </h1>
-        </Link>
+        </a>
+      </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
           <li className='p-4'>
             <Link href='/'>Home</Link>
@@ -76,7 +85,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

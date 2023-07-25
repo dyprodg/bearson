@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Hero = ({ heading, message }) => {
   // Definiere den Stil für das Hintergrundbild
@@ -15,7 +16,10 @@ const Hero = ({ heading, message }) => {
   };
 
   return (
-    <div className='relative overflow-hidden h-screen'>
+    <motion.div className='relative overflow-hidden h-screen'
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 2, delay: 1 }}>
       <div style={backgroundStyle}></div>
       {/* Overlay */}
       <div className='absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 z-10' />
@@ -31,13 +35,13 @@ const Hero = ({ heading, message }) => {
             size={100}
           />
           <FaWhatsapp
-            onClick={() => window.open('https://wa.me/+4916091208750', '_blank')}
+            onClick={() => window.open('https://wa.me/+491789751672', '_blank')}
             className='cursor-pointer hover:scale-110 transition-all duration-200 mx-8'
             size={100}
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

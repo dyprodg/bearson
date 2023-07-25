@@ -5,13 +5,15 @@ import Slider from '../components/Slider';
 import { SliderData } from '../components/SliderData';
 import Impressum from '../components/Impressum';
 
+
+
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Bearson Tattoo</title>
         <meta name='bearson' content='bearsonwebpage' />
-        <link rel='icon' href='/favicon.png' />
+        <link rel="shortcut icon" href="/bearson.ico" />
       </Head>
       <Hero heading='Du willst ein Tattoo?' message='Schreibe mir einfach für einen Termin!'/>
       <Slider slides={SliderData} />
