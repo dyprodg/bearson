@@ -14,6 +14,7 @@ const Impressum = () => {
             <div className='bg-black p-4 rounded-lg'>
               <h4 className='text-lg font-bold mb-2 text-white'>Impressum</h4>
               <p>Bearson Tattoo</p>
+              <p>Simon Brik</p>
               <p>Herrenstraße 2</p>
               <p>86911 Dießen am Ammersee</p>
             </div>
@@ -24,14 +25,14 @@ const Impressum = () => {
             </div>
             <div className='bg-black p-4 rounded-lg'>
               <h4 className='font-bold mb-2 text-white text-lg'>Weitere Infos</h4>
-              <p>Datenschutzerklärung
-              Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
-              Datenerfassung auf unserer Website
-              Wir, die Betreiber dieser Website, erheben und speichern auf unserer Website ausdrücklich keine personenbezogenen Daten (wie Name, Anschrift oder E-Mail-Adressen), es sei denn, diese werden freiwillig von Ihnen zur Verfügung gestellt (z. B. in einem Kontaktformular, sofern vorhanden).
-              Verwendung von Cookies
-              Wir verwenden auf unserer Website keine Cookies. Cookies sind kleine Dateien, die Ihr Browser automatisch erstellt und die auf Ihrem Endgerät (Laptop, Tablet, Smartphone o.ä.) gespeichert werden, wenn Sie unsere Seite besuchen.
-              Änderungen dieser Datenschutzerklärung
-              Wir behalten uns vor, diese Datenschutzerklärung zu ändern, um sie an aktuelle rechtliche Anforderungen oder Änderungen unserer Dienste anzupassen, z. B. bei der Einführung neuer Dienste. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+              <p>Datenschutzerklärung <br />
+              Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. <br /> Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. <br />
+              Datenerfassung auf unserer Website <br />
+              Wir, die Betreiber dieser Website, erheben und speichern auf unserer Website ausdrücklich keine personenbezogenen Daten. <br />
+              Verwendung von Cookies <br />
+              Wir verwenden auf unserer Website KEINE Cookies. <br />
+              Änderungen dieser Datenschutzerklärung<br />
+              Wir behalten uns vor, diese Datenschutzerklärung zu ändern, um sie an aktuelle rechtliche Anforderungen oder Änderungen unserer Dienste anzupassen, <br /> z. B. bei der Einführung neuer Dienste. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
               <br />
               <p>Steuernummer: 12345</p>
               
