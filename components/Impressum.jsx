@@ -4,7 +4,7 @@ const Impressum = () => {
   const [showAGB, setShowAGB] = useState(false);
 
   return (
-    <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover'>
+    <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover font-sans font-thin'>
       <footer id='impressum' className='bg-black text-white py-4'>
         <div className='container mx-auto px-4 sm:px-0'>
           <div className='flex flex-col sm:flex-row justify-center'>

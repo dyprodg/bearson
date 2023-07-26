@@ -38,18 +38,18 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className='fixed left-0 top-0 w-full z-30 ease-in duration-300'
     >
-      <div className='max-w-[1240px] m-auto flex justify-between py-4 items-center text-white'>
+      <div className='max-w-[1240px] m-auto flex justify-between py-4 items-center text-white text-xl'>
       <Link href='/'>
         <a className='flex items-center'>
         <img src={image}/>
 
-         <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
+         <h1 style={{ color: `${textColor}` }} className='font-bold text-5xl'>
           Bearson Tattoo
   </h1>
        
         </a>
       </Link>
-        <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
+        <ul style={{ color: `${textColor}` }} className='hidden sm:flex font-bold'>
           <li className='p-4'>
             <Link href='/'>Home</Link>
           </li>

@@ -26,7 +26,7 @@ const Hero = ({ heading, message }) => {
       <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-white'>
         <div className='text-center'>
           <h2 className='text-5xl font-bold'>{heading}</h2>
-          <p className='py-5 text-xl'>{message}</p>
+          <p className='py-5 text-2xl'>{message}</p>
         </div>
         <div className='flex justify-center mt-10'>
           <FaInstagram

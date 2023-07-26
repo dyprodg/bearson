@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-  font-family: 'Raleway', sans-serif;
-  background-color: black;
+@font-face {
+  font-family: 'Thinoo';
+  src: url('/fonts/thinoothin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-family: 'Thinoo', sans-serif;
+  background-color: black;
+}
 .custom-img {
   background-image: url('/main.png')
 }
 
+.sans-serif {
+  font-family: 'sans-serif';
+}
