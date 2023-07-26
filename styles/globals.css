@@ -11,7 +11,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Thinoo', sans-serif;
+  font-family: 'Fresca', sans-serif;
   background-color: black;
 }
 .custom-img {
@@ -20,4 +20,8 @@ html {
 
 .sans-serif {
   font-family: 'sans-serif';
+}
+
+.thinoo {
+  font-family: 'Thinoo';
 }
