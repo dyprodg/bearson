@@ -8,7 +8,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
   const [textColor, setTextColor] = useState('white');
-  const [image, setImage] = useState('/logoS.png')
+  const [image, setImage] = useState('/logow.png')
 
   const handleNav = () => {
     setNav(!nav);
@@ -19,11 +19,11 @@ const Navbar = () => {
       if (window.scrollY >= 90) {
         setColor('#ffffff');
         setTextColor('#000000');
-        setImage('/logoSblack.png');
+        setImage('/logob.png');
       } else {
         setColor('transparent');
         setTextColor('#ffffff');
-        setImage('/logoS.png');
+        setImage('/logow.png');
       }
     };
     window.addEventListener('scroll', changeColor);
@@ -38,14 +38,14 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className='fixed left-0 top-0 w-full z-30 ease-in duration-300'
     >
-      <div className='max-w-[1240px] m-auto flex justify-between items-center text-white'>
+      <div className='max-w-[1240px] m-auto flex justify-between py-4 items-center text-white'>
       <Link href='/'>
         <a className='flex items-center'>
         <img src={image}/>
 
-         {/*<h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
+         <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
           Bearson Tattoo
-  </h1> */}
+  </h1>
        
         </a>
       </Link>
