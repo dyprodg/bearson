@@ -36,14 +36,15 @@ const Navbar = () => {
     transition={{ duration: 2 }}
       
       style={{ backgroundColor: `${color}` }}
-      className='fixed left-0 top-0 w-full z-30 ease-in duration-300'
+      className='fixed left-0 top-0 w-full z-30 ease-in'
     >
       <div className='max-w-[1240px] m-auto flex justify-between py-4 items-center text-white text-xl'>
       <Link href='/'>
         <a className='flex items-center'>
-        <img src={image}/>
+        <img src={image} style={{ width: '10%', height: 'auto' }}/>
 
-         <h1 style={{ color: `${textColor}` }} className='font-bold text-5xl thinoo whitespace-nowrap'>
+
+         <h1 style={{ color: `${textColor}` }} className='font-bold thinoo whitespace-nowrap text-4xl sm:text-5xl'>
           Bearson Tattoo
         </h1>
        
@@ -62,7 +63,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Button */}
-        <div onClick={handleNav} className='block sm:hidden z-10'>
+        <div onClick={handleNav} className='block sm:hidden z-10 pr-4'>
           {nav ? (
             <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
           ) : (
