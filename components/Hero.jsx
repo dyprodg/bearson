@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import { motion, useAnimation} from 'framer-motion';
 
 const Hero = ({ heading, message }) => {
   // Definiere den Stil für das Hintergrundbild
@@ -15,6 +15,16 @@ const Hero = ({ heading, message }) => {
     zIndex: '1',
   };
 
+  const controls = useAnimation();
+  
+  useEffect(() => {
+    controls.start({
+      x: ["0px", "10px", "0px", "-10px", "0px"], // Jiggle effect
+      transition: { repeat: Infinity, duration: 0.3, repeatDelay: 3 },
+    });
+  }, [controls]);
+    
+
   return (
     <motion.div className='relative overflow-hidden h-screen'
     initial={{ opacity: 0 }}
@@ -28,18 +38,21 @@ const Hero = ({ heading, message }) => {
           <h2 className='text-5xl font-bold'>{heading}</h2>
           <p className='py-5 text-xl'>{message}</p>
         </div>
-        <div className='flex justify-center mt-10'>
+        <motion.div 
+        animate={controls}
+        className='flex justify-center mt-10'>
           <FaInstagram
             onClick={() => window.open('https://www.instagram.com/bearson.tattoo/', '_blank')}
             className='cursor-pointer hover:scale-110 transition-all duration-200 mx-8'
             size={100}
           />
           <FaWhatsapp
+            
             onClick={() => window.open('https://wa.me/+491789751672', '_blank')}
             className='cursor-pointer hover:scale-110 transition-all duration-200 mx-8'
             size={100}
           />
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

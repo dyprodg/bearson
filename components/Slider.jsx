@@ -50,6 +50,7 @@ const Slider = ({ slides }) => {
                   width='1440'
                   height='600'
                   objectFit='cover'
+                  priority={index === current}
                 />
               )}
               <FaArrowCircleRight
