@@ -48,7 +48,7 @@ const Hero = ({ heading, message }) => {
           />
           <FaWhatsapp
             
-            onClick={() => window.open('https://wa.me/+491789751672', '_blank')}
+            onClick={() => window.open('')}
             className='cursor-pointer hover:scale-110 transition-all duration-200 mx-8'
             size={100}
           />
