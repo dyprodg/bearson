@@ -42,7 +42,7 @@ const Hero = ({ heading, message }) => {
         animate={controls}
         className='flex justify-center mt-10'>
           <FaInstagram
-            onClick={() => window.open('https://www.instagram.com/bearson.tattoo/', '_blank')}
+            onClick={() => window.open('https://www.instagram.com/', '_blank')}
             className='cursor-pointer hover:scale-110 transition-all duration-200 mx-8'
             size={100}
           />
