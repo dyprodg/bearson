@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Impressum = () => {
-  const [showAGB, setShowAGB] = useState(false);
+
 
   return (
     <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover font-sans font-thin'>
@@ -20,9 +20,17 @@ const Impressum = () => {
             </div>
             <div className='bg-black p-4 rounded-lg'>
               <h4 className='text-lg font-bold mb-2 text-white'>Kontakt</h4>
+              <p>This</p>
+              <p>is</p>
+              <p>just</p>
+              <p>a Portfolio work</p>
             </div>
             <div className='bg-black p-4 rounded-lg'>
               <h4 className='font-bold mb-2 text-white text-lg'>Weitere Infos</h4>
+              <p>This</p>
+              <p>is</p>
+              <p>just</p>
+              <p>a Portfolio work</p>
               <p></p>
               
           

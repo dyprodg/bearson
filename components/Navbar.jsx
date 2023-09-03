@@ -45,7 +45,7 @@ const Navbar = () => {
 
 
          <h1 style={{ color: `${textColor}` }} className='font-bold thinoo whitespace-nowrap text-4xl sm:text-5xl'>
-          Bearson Tattoo
+          Showcase Website
         </h1>
        
         </a>
